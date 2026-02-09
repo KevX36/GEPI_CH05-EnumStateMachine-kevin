@@ -15,7 +15,8 @@ public class ServiceHub : MonoBehaviour
     public static ServiceHub Instance { get; private set; }
 
 
-
+    [SerializeField] public GameStateManager gameStateManager { get; private set; }
+    [SerializeField] public UIManager uIManager { get; private set; }
 
 
     private void Awake()
