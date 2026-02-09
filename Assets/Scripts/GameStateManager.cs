@@ -10,6 +10,7 @@ public class GameStateManager : MonoBehaviour
         MainMenu,
         GamePlay,
     }
+    private UIManager UI;
     public GameState currentState { get; private set; }
     public GameState lastState { get; private set; }
     [Header("debug (read only)")]
