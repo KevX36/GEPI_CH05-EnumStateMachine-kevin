@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "name": "UiTest",
+    "maps": [
+        {
+            "name": "Ui tests",
+            "id": "e30942fb-846c-40ef-acb4-2b7274977dec",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "452ebcb2-94d3-49d2-9b19-a2388ab60697",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GameOver",
+                    "type": "Button",
+                    "id": "2df60717-ec99-4f05-aaca-62c5c5596b05",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3dd62e57-983f-4dfb-8007-5c818bb4fac2",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7ba85115-c398-48ef-b09b-742fd9d621c3",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GameOver",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

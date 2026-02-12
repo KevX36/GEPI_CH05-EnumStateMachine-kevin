@@ -4357,8 +4357,8 @@ MonoBehaviour:
   mainMenuUI: {fileID: 675014251}
   gameplayUI: {fileID: 896185439}
   pauseUI: {fileID: 21702495}
-  SettingUI: {fileID: 0}
-  GameOverUI: {fileID: 0}
+  SettingUI: {fileID: 1946189194}
+  GameOverUI: {fileID: 1267228062}
 --- !u!1 &1179825245
 GameObject:
   m_ObjectHideFlags: 0
@@ -7373,6 +7373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2095032243}
   - component: {fileID: 2095032244}
+  - component: {fileID: 2095032245}
   m_Layer: 0
   m_Name: Game State Manager
   m_TagString: Untagged
@@ -7410,6 +7411,68 @@ MonoBehaviour:
   UI: {fileID: 1133998107}
   currentActiveState: 
   lastActiveState: 
+--- !u!114 &2095032245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095032242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: c92819aa2d73e1346956a484989777de, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2095032244}
+        m_TargetAssemblyTypeName: GameStateManager, Assembly-CSharp
+        m_MethodName: OnPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 452ebcb2-94d3-49d2-9b19-a2388ab60697
+    m_ActionName: 'Ui tests/New action[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2095032244}
+        m_TargetAssemblyTypeName: GameStateManager, Assembly-CSharp
+        m_MethodName: OnGameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2df60717-ec99-4f05-aaca-62c5c5596b05
+    m_ActionName: 'Ui tests/GameOver[/Keyboard/space]'
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Ui tests
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &2118131831
 GameObject:
   m_ObjectHideFlags: 0

@@ -119,29 +119,7 @@ public class GameStateManager : MonoBehaviour
         }
         
     }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (currentState == GameState.MainMenu)
-            {
-                SetState(GameState.GamePlay);
-                return;
-            }
-
-            else if (currentState == GameState.GamePlay)
-            {
-                SetState(GameState.paused);
-                return;
-            }
-
-            else if (currentState == GameState.paused)
-            {
-                SetState(GameState.Init);
-                return;
-            }
-        }
-    }
+    
 
     public void StartGame()
     {
@@ -153,7 +131,7 @@ public class GameStateManager : MonoBehaviour
         {
             SetState(GameState.paused);
         }
-        else
+        else if ( currentState == GameState.paused)
         {
             SetState(GameState.GamePlay);
         }
@@ -161,11 +139,11 @@ public class GameStateManager : MonoBehaviour
 
     public void OnGameOver()
     {
-        if( currentState != GameState.GamePlay)
+        if( currentState == GameState.GamePlay)
         {
-            return;
+            SetState(GameState.GameOver);
         }
-        SetState(GameState.GameOver);
+        
     }
 
     public void OpenSettings()
